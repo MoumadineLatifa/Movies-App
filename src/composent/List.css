@@ -1,0 +1,58 @@
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.movie-list li {
+  list-style: none;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+}
+
+.movie-list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-list img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie-list p {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.pagination button:hover {
+  background-color: #4a4f54;
+}
+
+.pagination span {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
