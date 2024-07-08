@@ -1,4 +1,4 @@
-// App.js
+
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Form from './composent/Form';
@@ -13,11 +13,11 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSearch = (search) => {
-    console.log('Search term:', search); // Log the search term
+    console.log('Search term:', search); 
     fetch(`https://api.themoviedb.org/3/search/tv?api_key=fef55a6754f2f6d00a0038388915039c&include_adult=false&query=${search}`)
       .then(response => response.json())
       .then(data => {
-        console.log('API response data:', data); // Log the API response
+        console.log('API response data:', data); 
         setMovies(data.results);
       })
       .catch(error => console.error('Error fetching data:', error));
